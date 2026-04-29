@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+  <html lang="en" data-theme="dark">
+  <head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashish Ranjan | ECE Student & Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,
+  500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- BACK TO TOP -->
+  <div id="back-top" onclick="scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">AR.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="theme-toggle" id="themeToggle" title="Toggle theme"></div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <div class="hero-tag"><span></span>Available for Freelance &amp; Full-Time</div>
+      <h1 class="hero-name">
+        <span class="line1">Hi, I'm</span>
+        <span class="accent-word">Ashish Ranjan</span>
+      </h1>
+      <div class="hero-typed-wrap">
+        <span id="typed-text"></span><span class="cursor-blink"></span>
+      </div>
+      <p class="hero-desc">
+        ECE undergrad at SOA University building elegant web experiences and AI-powered applications. I craft digital
+  products that are fast, accessible and visually compelling.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i>View My Work</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i>Hire Me</a>
+        <a href="https://github.com/AshishRanjan2385" target="_blank" class="btn btn-outline"><i class="fab
+  fa-github"></i>GitHub</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-avatar-ring">
+        <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot orbit-dot-2"
+  style="top:auto;bottom:0;transform:translateX(-50%) translateY(50%)"></div></div>
+        <div class="avatar-circle">AR</div>
+      </div>
+      <div class="tech-badge tb1">⚡ React Developer</div>
+      <div class="tech-badge tb2">🤖 AI Integrations</div>
+      <div class="tech-badge tb3">🎨 UI/UX Designer</div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-label">Who I Am</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title">A Passionate<br>Builder &amp; Creator</h2>
+        <p>I'm <span>Ashish Ranjan</span>, a third-year Electronics and Communication Engineering student at Siksha 'O'
+  Anusandhan University, Bhubaneswar, with a strong passion for building scalable, beautiful web experiences.</p>
+        <p>My journey into technology started with curiosity about how things work on the internet. Today, I specialize
+  in <span>front-end development, AI integration, and user-centered design</span> — combining engineering principles
+  with creative thinking.</p>
+        <p>I'm actively seeking <span>freelance projects and job opportunities</span> where I can apply my skills to
+  real-world challenges. I love working with modern frameworks, designing clean UIs, and exploring how AI can
+  supercharge web apps.</p>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Years Coding</div></div>
+          <div class="stat-card"><div class="stat-num">ECE</div><div class="stat-label">B.Tech Branch</div></div>
+          <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Skills Learned</div></div>
+          <div class="stat-card"><div class="stat-num">2027</div><div class="stat-label">Graduation Year</div></div>
+        </div>
+      </div>
+      <div class="about-card-visual reveal">
+        <div class="code-window">
+          <div class="code-top"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot
+  dot-g"></div></div>
+  <pre><span class="c-comment">// ashish.config.js</span>
+
+  <span class="c-key">const</span> <span class="c-val">developer</span> <span class="c-pun">= {</span>
+    <span class="c-key">name</span><span class="c-pun">:</span> <span class="c-str">"Ashish Ranjan"</span><span
+  class="c-pun">,</span>
+    <span class="c-key">role</span><span class="c-pun">:</span> <span class="c-str">"Web &amp; AI Developer"</span><span
+   class="c-pun">,</span>
+    <span class="c-key">university</span><span class="c-pun">:</span> <span class="c-str">"SOA University"</span><span
+  class="c-pun">,</span>
+    <span class="c-key">branch</span><span class="c-pun">:</span> <span class="c-str">"ECE (2023–2027)"</span><span
+  class="c-pun">,</span>
+    <span class="c-key">skills</span><span class="c-pun">: [</span>
+      <span class="c-str">"HTML"</span><span class="c-pun">,</span> <span class="c-str">"CSS"</span><span
+  class="c-pun">,</span> <span class="c-str">"JavaScript"</span><span class="c-pun">,</span>
+      <span class="c-str">"React"</span><span class="c-pun">,</span> <span class="c-str">"AI Integration"</span>
+    <span class="c-pun">],</span>
+    <span class="c-key">openTo</span><span class="c-pun">:</span> <span class="c-str">"Freelance &amp;
+  Full-Time"</span><span class="c-pun">,</span>
+    <span class="c-key">location</span><span class="c-pun">:</span> <span class="c-str">"India"</span><span
+  class="c-pun">,</span>
+    <span class="c-key">passion</span><span class="c-pun">:</span> <span class="c-str">"Building cool stuff 🚀"</span>
+  <span class="c-pun">};</span>
+
+  <span class="c-key">export default</span> <span class="c-val">developer</span><span class="c-pun">;</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-label">What I Know</div>
+    <h2 class="section-title reveal">Technical Skills</h2>
+    <p class="section-sub reveal">A growing toolkit spanning frontend development, design, AI, and core electronics.</p>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+        <div class="skill-cat-title">Frontend Development</div>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>HTML5 &amp;
+  CSS3</span><span>90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"
+  data-width="90"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>JavaScript
+  (ES6+)</span><span>80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"
+  data-width="80"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>React.js</span><span>70%</span></div><div
+  class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>Tailwind CSS</span><span>75%</span></div><div
+  class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+        <div class="skill-cat-title">AI &amp; Emerging Tech</div>
+        <div class="skill-bars">
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>AI API
+  Integration</span><span>70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"
+  data-width="70"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>Prompt
+  Engineering</span><span>75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"
+  data-width="75"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-bar-label"><span>Python
+  (Basics)</span><span>60%</span></div><div class="skill-bar-track"><div class="skill-bar-fill"
+  data-width="60"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-paint-brush"></i></div>
+        <div class="skill-cat-title">Design &amp; UI/UX</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">UI Design</span>
+          <span class="skill-tag">UX Principles</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Wireframing</span>
+          <span class="skill-tag">Prototyping</span>
+          <span class="skill-tag">Color Theory</span>
+          <span class="skill-tag">Typography</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+        <div class="skill-cat-title">Tools &amp; Workflow</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">npm</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Chrome DevTools</span>
+          <span class="skill-tag">Netlify / Vercel</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-microchip"></i></div>
+        <div class="skill-cat-title">Core ECE (Academic)</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Circuit Design</span>
+          <span class="skill-tag">Signals &amp; Systems</span>
+          <span class="skill-tag">Digital Electronics</span>
+          <span class="skill-tag">Embedded Systems</span>
+          <span class="skill-tag">MATLAB (Basics)</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon"><i class="fas fa-language"></i></div>
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Self Learning</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">Creativity</span>
+          <span class="skill-tag">Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="section-label">Academic Journey</div>
+    <h2 class="section-title reveal">Education</h2>
+    <p class="section-sub reveal">My academic background spanning school and higher education.</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot">🎓</div>
+        <div class="timeline-card">
+          <div class="timeline-badge">Current · B.Tech</div>
+          <div class="timeline-school">Siksha 'O' Anusandhan University (SOA)</div>
+          <div class="timeline-degree">Bachelor of Technology — Electronics &amp; Communication Engineering (ECE)</div>
+          <div class="timeline-meta">
+            <div class="tm-item"><i class="fas fa-calendar"></i>Batch 2023 – 2027</div>
+            <div class="tm-item"><i class="fas fa-map-marker-alt"></i>Bhubaneswar, Odisha</div>
+            <div class="tm-item"><i class="fas fa-certificate"></i>Deemed University</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot">📘</div>
+        <div class="timeline-card">
+          <div class="timeline-badge">2021 – 2023 · Class XII</div>
+          <div class="timeline-school">Valley View School, Telco Jamshedpur</div>
+          <div class="timeline-degree">Senior Secondary — Science Stream (CBSE)</div>
+          <div class="timeline-meta">
+            <div class="tm-item"><i class="fas fa-percent"></i>Percentage: <span class="percent-badge"
+  style="margin-left:4px">53.8%</span></div>
+            <div class="tm-item"><i class="fas fa-map-marker-alt"></i>Jamshedpur, Jharkhand</div>
+            <div class="tm-item"><i class="fas fa-book"></i>CBSE Affiliated</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot">📗</div>
+        <div class="timeline-card">
+          <div class="timeline-badge">2020 – 2021 · Class X</div>
+          <div class="timeline-school">Shiksha Niketan School, Telco Jamshedpur</div>
+          <div class="timeline-degree">Secondary School Certificate — CBSE</div>
+          <div class="timeline-meta">
+            <div class="tm-item"><i class="fas fa-percent"></i>Percentage: <span class="percent-badge"
+  style="margin-left:4px">69%</span></div>
+            <div class="tm-item"><i class="fas fa-map-marker-alt"></i>Jamshedpur, Jharkhand</div>
+            <div class="tm-item"><i class="fas fa-book"></i>CBSE Affiliated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-label">My Work</div>
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <p class="section-sub reveal">Here are some of the things I've built. More projects live on my GitHub.</p>
+    <br>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-header project-header-1">
+          🎮
+          <div class="project-header-glow"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Hand-Gesture Rock Paper Scissors</div>
+          <p class="project-desc">A real-time two-player Rock Paper Scissors game controlled entirely by hand
+  gestures.</p>
+          <div class="project-stack">
+            <span class="stack-pill">Python</span><span class="stack-pill">OpenCV</span><span
+  class="stack-pill">AI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AshishRanjan2385/Rock_Paper_Scissor-" class="proj-link" target="_blank"><i
+  class="fab fa-github"></i>Code</a>
+            <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i>Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header project-header-2">
+          🏔️
+          <div class="project-header-glow"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Rockfall Prediction System</div>
+          <p class="project-desc">AI-powered rockfall prediction system that analyzes geological and environmental
+  data.</p>
+          <div class="project-stack">
+            <span class="stack-pill">JavaScript</span><span class="stack-pill">AI/ML</span><span class="stack-pill">Data
+   Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AshishRanjan2385/Rockfall-Prediction" class="proj-link" target="_blank"><i
+  class="fab fa-github"></i>Code</a>
+            <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i>Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header project-header-3">
+          💰
+          <div class="project-header-glow"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">FinAdmin Dashboard</div>
+          <p class="project-desc">A personal finance admin dashboard built with vanilla HTML, CSS, and JavaScript.</p>
+          <div class="project-stack">
+            <span class="stack-pill">HTML5</span><span class="stack-pill">CSS3</span><span
+  class="stack-pill">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AshishRanjan2385/FinAdmin" class="proj-link" target="_blank"><i class="fab
+  fa-github"></i>Code</a>
+            <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i>Live</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-header project-header-4">
+          🌱
+          <div class="project-header-glow"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">FunGrow</div>
+          <p class="project-desc">Explore the codebase on GitHub to see the implementation details of this project.</p>
+          <div class="project-stack">
+            <span class="stack-pill">HTML</span><span class="stack-pill">Frontend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AshishRanjan2385/fungrow" class="proj-link" target="_blank"><i class="fab
+  fa-github"></i>Code</a>
+            <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i>Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title reveal">Certifications</h2>
+    <p class="section-sub reveal">Courses and certifications that have shaped my skillset.</p>
+
+    <br>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-name">Responsive Web Design</div>
+          <div class="cert-issuer">freeCodeCamp</div>
+          <span class="cert-year">2023</span>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">⚛️</div>
+        <div>
+          <div class="cert-name">JavaScript Algorithms &amp; Data Structures</div>
+          <div class="cert-issuer">freeCodeCamp</div>
+          <span class="cert-year">2023</span>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎨</div>
+        <div>
+          <div class="cert-name">UI/UX Design Fundamentals</div>
+          <div class="cert-issuer">Google / Coursera</div>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🤖</div>
+        <div>
+          <div class="cert-name">Introduction to Generative AI</div>
+          <div class="cert-issuer">Google Cloud Skills Boost</div>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">🐍</div>
+        <div>
+          <div class="cert-name">Python for Beginners</div>
+          <div class="cert-issuer">Udemy / NPTEL</div>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon">📱</div>
+        <div>
+          <div class="cert-name">React — The Complete Guide</div>
+          <div class="cert-issuer">Udemy</div>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title reveal">Let's Work Together</h2>
+    <p class="section-sub reveal">Open to freelance projects, internships, and full-time opportunities. Let's build
+  something amazing.</p>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">ashish.ranjan2385@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-val">Jamshedpur, Jharkhand, India</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="contact-label">University</div>
+            <div class="contact-val">SOA University, Bhubaneswar</div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/AshishRanjan2385" class="social-btn" target="_blank" title="GitHub"><i class="fab
+  fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ashish-ranjan-2489b82a8" class="social-btn" target="_blank"
+  title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:ashish.ranjan2385@gmail.com" class="social-btn" title="Email"><i class="fas
+  fa-envelope"></i></a>
+          <a href="#" class="social-btn" title="Twitter / X"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-logo">Ashish Ranjan</div>
+    <div class="footer-copy">© 2025 Ashish Ranjan. All rights reserved.</div>
+    <div class="footer-note">ECE Student · Web Developer · AI Enthusiast</div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+  </html>
